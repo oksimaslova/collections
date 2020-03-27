@@ -20,7 +20,7 @@
 									"pm.globals.set(\"host\", jsonData.headers.host);",
 									"",
 									"pm.test('test body', pm.expect(jsonData.headers.host).to.equal(pm.globals.get('host')));",
-									"pm.test('status', pm.response.to.have.status(200) );",
+									"pm.test('status', pm.response.to.have.status(500) );",
 									"",
 									"pm.test('test body and status code', function () {",
 									"    pm.expect(jsonData.headers.host).to.equal(pm.globals.get('host')), ",
