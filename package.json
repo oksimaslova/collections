@@ -6,7 +6,7 @@
     "test": "collections"
   },
   "scripts": {
-    "api-test-production": "newman run scripts_with_tests.postman_collection.json"
+    "api-test-production": "newman run scripts_with_tests.postman_collection.json --reporters junit --reporter-junit-export newman.xml"
   },
   "author": "Maslova Oksana",
   "dependencies": {
