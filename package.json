@@ -6,7 +6,7 @@
     "test": "collections"
   },
   "scripts": {
-    "api-test-production": "newman run C:\\Users\\Oksana_Maslova\\collections\\scripts_with_tests.postman_collection.json"
+    "api-test-production": "newman run scripts_with_tests.postman_collection.json"
   },
   "author": "Maslova Oksana",
   "dependencies": {
