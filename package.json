@@ -6,7 +6,7 @@
     "test": "collections"
   },
   "scripts": {
-    "api-test-production": "newman run scripts_with_tests.postman_collection.json"
+    "api-test-production": "newman run scripts_with_tests.postman_collection.json -r @reportportal/reportportal --reporter-@reportportal/reportportal-debug=true --reporter-@reportportal/reportportal-endpoint=https://rp.epam.com/api/v1 --reporter-@reportportal/reportportal-token=a780d542-18f1-47c6-8545-c83312fa31bb --reporter-@reportportal/reportportal-launch=oksana_maslova_TEST_EXAMPLE --reporter-@reportportal/reportportal-project=oksana_maslova_personal -x"
   },
   "author": "Maslova Oksana",
   "dependencies": {
