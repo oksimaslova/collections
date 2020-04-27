@@ -11,6 +11,6 @@
   "author": "Maslova Oksana",
   "dependencies": {
     "newman": "^4.6.0",
-    "newman-reporter-reportportal": "0.0.23"
+    "newman-reporter-reportportal": "0.0.18"
   }
 }
