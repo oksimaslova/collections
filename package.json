@@ -6,7 +6,7 @@
     "test": "collections"
   },
   "scripts": {
-    "api-test-production": "docker run -v ~/collections:/etc/newman -t reportportal/newman run \"scripts_with_tests.postman_collection.json\" --reporters @reportportal/reportportal --reporter-@reportportal/reportportal-debug=true --reporter-@reportportal/reportportal-endpoint=https://rp.epam.com/api/v1 --reporter-@reportportal/reportportal-token=a780d542-18f1-47c6-8545-c83312fa31bb --reporter-@reportportal/reportportal-launch=oksana_maslova_TEST_EXAMPLE --reporter-@reportportal/reportportal-project=oksana_maslova_personal -x'
+    "api-test-production": "newman run scripts_with_tests.postman_collection.json --reporters @reportportal/reportportal --reporter-@reportportal/reportportal-endpoint=https://report-portal.build.pib.dowjones.io:8080/api/v1 --reporter-@reportportal/reportportal-token=4070ea3a-0501-4da2-b1a6-5006124b51ec --reporter-@reportportal/reportportal-launch=LAUNCH_NAME --reporter-@reportportal/reportportal-project=hercules -x"
   },
   "author": "Maslova Oksana",
   "dependencies": {
